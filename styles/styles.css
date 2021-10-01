@@ -1,0 +1,691 @@
+
+
+body{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    --color-azul: #0891FB;
+    --color-claro: #A3ACD8;
+    --color-gris: #8083A2;
+    --color-blanco: #e9e9e9;
+    --color-hovers: #b6b6b6;
+}
+
+*{
+    list-style: none;
+    margin: 0px;
+    outline: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* ____________ MENU _____________ */
+
+#menu{
+    background-color: #1f212c;
+    color: var(--color-gris);
+    font-size: 17px;
+    min-height: 100vh;
+    padding: 3% 0 3% 3%;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: fixed;
+    text-align: right;
+    transition: all 200ms;
+    width: 14%;
+}
+
+#menu button:hover{
+    color: var(--color-hovers);
+}
+
+#menu button:focus{
+    background-color: #13131B;
+    color: var(--color-blanco);
+}
+
+#title{
+    margin-bottom: 10%;
+    margin-right: 20%;
+}
+
+#title img{
+    height: 60px;
+    padding-top: 30px;
+}
+
+.back{
+    background-color: transparent;
+    border: none;
+    color: var(--color-gris);
+    font-size: 16px;
+    display: none;
+    position: relative;
+    padding-bottom: 0;
+}
+
+#menuList{
+    height: 400px;
+    margin-top: 20%;
+}
+
+#menu button{
+    background-color: transparent;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    color: var(--color-gris);
+    font-size: 17px;
+    padding: 9%;
+    text-align: left;
+    transition: all 100ms;
+    width: 100%;
+}
+
+#menuList li i{
+    padding-right: 10px;
+}
+
+#logout{
+    display: block;
+    margin-top: 85%;
+    padding: 8%;
+    text-align: left;
+}
+
+#logout i{
+    padding-right: 10px;
+}
+
+#logout{
+    color: var(--color-gris);
+}
+
+#logout:hover{
+    color: var(--color-hovers);
+}
+
+/* ____________ SECTION PRINCIPAL _____________ */
+    /* HEADER SECTION */
+
+section{
+    background: radial-gradient(farthest-corner at 30px 740px,
+    #2F233E 0% 1%, #23242D 20% 70%, #272A4A 100%);
+    background-attachment: fixed;
+    width: 60%;
+    margin-left: 17%;
+    min-height: 100%;
+}
+
+#header{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 96%;
+}
+
+#titleMovil{
+    display: none;
+}
+
+#search{
+    display: flex;
+    width: 40%;
+}
+
+#search input{
+    background-color: #262837;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    color: var(--color-gris);
+    height: 30px;
+    padding: 5px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#search button{
+    background-color: #262837;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    color: var(--color-gris);
+    padding: 5px;
+    padding-right: 15px;
+    position: relative;
+    width: 25%;
+}
+
+#notifications{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+#notifications button{
+    background-color: transparent;
+    border: none;
+    color: var(--color-claro);
+    font-size: 23px;
+}
+
+#notifications button:hover{
+    color: var(--color-blanco);
+}
+
+#otherOptions{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+#otherOptions button{
+    background: #1a1b25;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-gris);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+#otherOptions button:hover{
+    color: var(--color-hovers);
+}
+
+#otherOptions button:last-child{
+    background-color: transparent;
+}
+
+#otherOptions button:last-child i{
+    font-size: 23px;
+}
+
+    /* PRESENTATION */
+
+#presentation{
+    background-image: url('./img/avengers.jpg');
+    background-position: 30% 80%;
+    background-size: 100%;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    animation: presentation 40s linear;
+}
+
+#presentation button{
+    background-color: #252736;
+    bottom: 15px;
+    border: 1px solid var(--color-azul);
+    border-radius: 25px;
+    color: var(--color-azul);
+    display: block;
+    padding: 8px 10px;
+    position: absolute;
+    right: 30px;
+}
+
+    /* ARTICLES */
+
+#filters{
+    color: var(--color-claro);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90%;
+}
+
+#filters #place i{
+    color: var(--color-azul);
+}
+
+#filters select{
+    background-color: transparent;
+    border: none;
+    color: var(--color-claro);
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 90%;
+}
+
+.movie{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    min-height: 300px;
+    transition: all 300ms;
+    width: 25%;
+}
+
+.movie:hover{
+    transform: scale(1.03, 1.03);
+}
+
+.movie img{
+    border-radius: 5px 5px 0 0;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.movie .description{
+    background-color: #101018;
+    border-radius: 0 0 5px 5px;
+    color: var(--color-blanco);
+    padding: 15px 10px 10px 10px;
+}
+
+.footer-card{
+    display: flex;
+    color: var(--color-gris);
+    justify-content: space-between;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.footer-card i{
+    padding-right: 3px;
+}
+
+/* ________________ ASIDE ___________________ */
+
+aside{
+    background: linear-gradient(#262837, #262837e7);
+    min-height: 100vh;
+    position: fixed;
+    right: 0px;
+    transition: all 200ms;
+    width: 23%;
+}
+
+#aside .back{
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 75%;
+    transform: rotate(180deg);
+}
+
+.img-user{
+    border-radius: 50%;
+    height: 50px;
+    padding: 10px;
+    object-fit: cover;
+    width: 50px;
+}
+
+#perfil{
+    display: flex;
+    padding: 30px 10px 20px 10px;
+}
+
+.name{
+    padding: 15px 5px;
+}
+
+.name h4{
+    color: var(--color-blanco);
+}
+
+.name p{
+    color: var(--color-gris);
+    font-size: 12px;
+}
+
+#perfil span{
+    background-color: yellow;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    width: 45px;
+}
+
+#goLive{
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 17px rgba(128, 128, 128, 0.432);
+    font-size: 19px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 12px;
+    transition: all 300ms;
+    width: 75%;
+}
+
+#goLive:hover{
+    box-shadow: 0px 0px 17px rgba(128, 128, 128, 0.432);
+    font-size: 22px;
+}
+
+#goLive i{
+    padding-right: 5px;
+}
+
+#lastViews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+#lastViews h4{
+    color: var(--color-gris);
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 0;
+    text-align: left;
+    width: 100%;
+}
+
+#lastViews img{
+    border-radius: 10px;
+    height: 70px;
+    transition: all 300ms;
+    width: 120px;
+    object-fit: cover;
+}
+
+#lastViews img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#favourites{
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+#favourites h4{
+    color: var(--color-gris);
+    font-size: 18px;
+    text-align: left;
+}
+
+#favourites img{
+    height: 40px;
+    padding: 15px 5px;
+    width: 40px;
+    transition: all 100ms;
+}
+
+#favourites img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#chats{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 10px 10px;
+}
+
+#chats > h4{
+    color: var(--color-gris);
+    font-size: 18px;
+    width: 100%;
+}
+
+
+#chats #lastChats{
+    padding: 10px;
+}
+
+#chats article{
+    display: flex;
+    flex-direction: row;
+}
+
+#chats a{
+    display: flex;
+}
+
+#chats article img{
+    height: 44px;
+    width: 44px;
+}
+
+#chats article button{
+    background-color: transparent;
+    border: none;
+    color: var(--color-gris);
+    margin-left: 20%;
+    line-height: 50px;
+}
+
+@keyframes presentation{
+    from{
+        background-position-y: 0%;
+    }
+    to{
+        background-position-y: 70%;
+    }
+}
+
+@media( max-width: 1200px ){
+    #menu{
+        font-size: 14px;
+        padding: 1% 0 1% 1%;
+        width: 16%;
+    }
+    #menu #title img{
+        height: 50px;
+        padding-left: 10px;
+    }
+    #menu button{
+        font-size: 15px;
+    }
+    #logout{
+        margin-top: 20%;
+    }
+    
+    #notifications button{
+        font-size: 19px;
+    }
+    #otherOptions button{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    #otherOptions button:last-child i{
+        font-size: 18px; 
+    }
+
+    .img-user{
+        height: 30px;
+        width: 30px;
+    }
+    .name{
+        padding: 7px 0;
+    }
+    .name p{
+        font-size: 10px;
+    }
+    #perfil span{
+        font-size: 10px;
+        width: 36px;
+    }
+    #goLive{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #lastViews article:nth-child(3),
+    #lastViews article:nth-child(4){
+        display: none;
+    }
+    #lastViews img{
+        height: 50px;
+        width: 80px;
+    }
+
+    #favourites a:nth-child(3),
+    #favourites a:nth-child(4){
+        display: none;
+    }
+
+    #chats #lastChats{
+        padding: 0px;
+    }
+    #chats article .name{
+        padding: 20px 0;
+    }
+    #chats article .name h4{
+        font-size: 12px;
+    }
+    #chats article button{
+        margin-left: 7%;
+    }
+}
+
+@media( max-width: 800px ){
+    #menu{
+        z-index: 3;
+        width: 0%;
+        overflow: hidden;
+    }
+    .back{
+        display: block;
+    }
+    #menu #title{
+        margin-bottom: 0;
+    }
+    #menu #title img{
+        padding-top: 0;
+    }
+    #menuList{
+        height: 200px;
+        margin-top: 5%;
+        padding-left: 20px;
+    }
+    #menu button{
+        font-size: 14px;
+        padding: 5%;
+    }
+    #logout{
+        margin-top: 50%;
+        font-size: 13px;
+    }
+
+    section{
+        margin-left: 0;
+        width: 100%;
+    }
+    #header{
+        flex-direction: row;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    #titleMovil{
+        align-items: center;
+        background-color: #1f212c;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        width: 100%;
+    }
+    #titleMovil #botonMenu{
+        background-color: transparent;
+        border: none;
+        color: var(--color-claro);
+        font-size: 20px;
+    }
+    #titleMovil img{
+        padding-top: 3px;
+    }
+    #titleMovil #botonUser{
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        height: 30px;
+    }
+    #titleMovil #botonUser .img-user{
+        padding: 0;
+    }
+
+    #header #search{
+        order: 5;
+        padding: 0 20px;
+        width: 100%;
+    }
+    #notifications{
+        justify-content: space-around;
+        width: 40%;
+    }
+    #otherOptions{
+        justify-content: space-around;
+        width: 40%;
+    }
+    #otherOptions button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    #presentation{
+        background-position: 50% 80%;
+        background-size: 130%;
+        height: 130px;
+    }
+
+    #container{
+        padding: 30px 0;
+    }
+    
+    .movie{
+        width: 90%;
+    }
+    .movie img{
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    aside{
+        width: 0%;
+        overflow: hidden;
+        z-index: 3;
+    }
+    #aside #perfil{
+        padding-top: 10px;
+    }
+}
+
+@media( max-width: 340px ){
+    #titleMovil img{
+        height: 40px;
+    }
+    #notifications{
+        width: 50%;
+    }
+    #otherOptions{
+        width: 50%;
+    }
+    #titleMovil #botonUser img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #presentation button{
+        bottom: 10px;
+        font-size: 12px;
+        right: 10px;
+    }
+}

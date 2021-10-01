@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./js/main.js"></script>
+    <title>Streamix</title>
+</head>
+<body>
+    <!-- ___________________ MENU __________________________ -->
+    <nav id="menu">
+
+        <button type="button" class="back">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <div id="title">
+            <img src="./styles/img/logo.png" alt="title" title="title">
+        </div>
+
+        <div id="menuList">
+            <ul>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-house"></i>
+                        Home
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-star"></i>
+                        Trending
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-tv"></i>
+                        Suggestions
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-grid"></i>
+                        Categories
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-compass"></i>
+                        Discover
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-calendar-event"></i>
+                        Schedule
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="bi bi-gear"></i>
+                        Settings
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <a id="logout" href="#">
+            <i class="bi bi-box-arrow-in-left"></i>
+            Logout
+        </a>
+    </nav>
+
+    <!-- ___________________ FIN MENU __________________________ -->
+
+    <!-- ___________________ SECTION PRINCIPAL __________________________ -->
+
+    <section>
+
+        <!-- HEADER SECTION -->
+
+        <div id="header">
+
+            <div id="titleMovil">
+                <button type="button" id="botonMenu">
+                    <i class="bi bi-list"></i>
+                </button>
+                <img src="./styles/img/logo.png" alt="title" title="title">
+                <button type="button" id="botonUser">
+                    <img src="./styles/img/IMG_0140.jpg" id="userMenu" class="img-user" alt="" title="">
+                </button>
+            </div>
+
+            <div id="search" tabindex="1">
+                <input type="text" placeholder="Search here..."/>
+                <button type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div id="notifications">
+                <button type="button">
+                    <i class="bi bi-bell"></i>
+                </button>
+                <button type="button">
+                    <i class="bi bi-chat-dots"></i>
+                </button>
+            </div>
+            <div id="otherOptions">
+                <button type="button">
+                    <i class="bi bi-film"></i>
+                    Watch list
+                </button>
+                <button type="button">
+                    <i class="bi bi-arrow-up-right-circle"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- PRESENTATION -->
+
+        <div id="presentation">
+            <button type="button">Create your profile</button>
+        </div>
+
+        <!-- ARTICLES -->
+
+        <div id="filters">
+            <h3>Streaming</h3>
+            <div id="place">
+                <i class="bi bi-funnel"></i>
+                <select>
+                    <option>Hollywood</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="container">
+            <article class="movie">
+                <img src="./styles/img/spider-man.png" alt="" title="">
+                <div class="description">
+                    <h4>Spiderman: Far From Home</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            <article class="movie">
+                <img src="./styles/img/black-widow.jpeg" alt="" title="">
+                <div class="description">
+                    <h4>Black Widow</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            <article class="movie">
+                <img src="./styles/img/Eternals.png" alt="" title="">
+                <div class="description">
+                    <h4>Eternals</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            <article class="movie">
+                <img src="./styles/img/iron-man.png" alt="" title="">
+                <div class="description">
+                    <h4>Iron Man 3</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            <article class="movie">
+                <img src="./styles/img/logan.jpg" alt="" title="">
+                <div class="description">
+                    <h4>Logan</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            <article class="movie">
+                <img src="./styles/img/shang-chi.jpg" alt="" title="">
+                <div class="description">
+                    <h4>Shang Chi: La leyenda de los 10 anillos</h4>
+                    <div class="footer-card">
+                        <div><i class="bi bi-eye"></i>10.1k watching</div>
+                        <div><i class="bi bi-film"></i>Add</div>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+
+    </section>
+
+    <!-- ___________________ ASIDE __________________________ -->
+
+    <aside id="aside">
+
+        <button type="button" class="back">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <div id="perfil">
+            <img src="./styles/img/IMG_0140.jpg" class="img-user" alt="" title="">
+            <div class="name">
+                <a href="#">
+                    <h4>Gonzalo Jerez</h4>
+                    <p>maildelusuario@gmail.com</p>
+                </a>
+            </div>
+            <span>
+                Admin
+            </span>
+        </div>
+
+        <button id="goLive">
+            <i class="bi bi-camera-video"></i>
+            Go live
+        </button>
+
+        <div id="lastViews">
+            <h4>Last views</h4>
+            <article>
+                <a href="#">
+                    <img src="./styles/img/civil-war.jpg" alt="" title="">
+                    <!-- <p>nombre de pelicula</p> -->
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./styles/img/endgame.jpg" alt="" title="">
+                    <!-- <p>nombre de pelicula</p> -->
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./styles/img/guardianes.jpg" alt="" title="">
+                    <!-- <p>nombre de pelicula</p> -->
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./styles/img/thorRagnarok.jpg" alt="" title="">
+                    <!-- <p>nombre de pelicula</p> -->
+                </a>
+            </article>
+        </div>
+
+        <div id="favourites">
+            <h4>Favourites actors</h4>
+            <div id="actors">
+                <a href="#"><img src="./styles/img/chris-evans.jpg" class="img-user" alt="" title=""></a>
+                <a href="#"><img src="./styles/img/robert.png" class="img-user" alt="" title=""></a>
+                <a href="#"><img src="./styles/img/scarlett.jpg" class="img-user" alt="" title=""></a>
+                <a href="#"><img src="./styles/img/thor.jpg" class="img-user" alt="" title=""></a>
+                <a href="#"><img src="./styles/img/tom-holland.jpg" class="img-user" alt="" title=""></a>
+            </div>
+        </div>
+
+        <div id="chats">
+            <h4>Chats</h4>
+            <div id="lastChats">
+                <article>
+                    <a href="#">
+                        <img src="./styles/img/persona1.jpg" class="img-user" alt="" title="">
+                        <div class="name">
+                            <h4>Esteban Quito</h4>
+                            <p>maildelusuario@gmail.com</p>
+                        </div>
+                    </a>
+                    <button type="button">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="./styles/img/persona2.jpg" class="img-user" alt="" title="">
+                        <div class="name">
+                            <h4>Camila Nesa</h4>
+                            <p>maildelusuario@gmail.com</p>
+                        </div>
+                    </a>
+                    <button type="button">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="./styles/img/persona3.jpg" class="img-user" alt="" title="">
+                        <div class="name">
+                            <h4>Debora Meltrozo</h4>
+                            <p>maildelusuario@gmail.com</p>
+                        </div>
+                    </a>
+                    <button type="button">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                </article>
+                
+            </div>
+        </div>
+    </aside>
+    
+</body>
+</html>
